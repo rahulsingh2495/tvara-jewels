@@ -69,7 +69,7 @@ const Gallery = () => {
           <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted block mb-3">
             The Atelier
           </span>
-          <h2 className="font-serif text-5xl text-green-dark">
+          <h2 className="font-serif text-4xl text-green-dark">
             A Glimpse Into Our World.
           </h2>
           <div className="mt-4 flex justify-center">

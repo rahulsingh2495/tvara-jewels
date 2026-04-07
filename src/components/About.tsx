@@ -24,7 +24,7 @@ const About = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl text-green-dark mb-8">The Story of Tvara</h2>
+          <h2 className="text-4xl text-green-dark mb-8">The Story of Tvara</h2>
           <div className="space-y-6 text-muted text-lg leading-relaxed">
             <p>
               Tvara was born from a desire to bridge the gap between the grandeur of Indian heritage and the clean lines of modern aesthetics. Founded by Prinkle Bafna, our journey began with a simple belief: that jewelry should be more than just an ornament.

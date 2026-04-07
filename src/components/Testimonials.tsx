@@ -1,7 +1,7 @@
 const Testimonials = () => (
   <section id="testimonials" className="bg-ivory-mid py-20 scroll-mt-28">
     <div className="container mx-auto px-6">
-      <h2 className="text-center text-5xl text-green-dark mb-10">Voices of Tvara.</h2>
+      <h2 className="text-center text-4xl text-green-dark mb-10">Voices of Tvara.</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {[
           { name: 'Ananya R.', text: '"The necklace I ordered for my wedding was beyond beautiful. The craftsmanship is so fine, it truly felt like an heirloom piece."' },
