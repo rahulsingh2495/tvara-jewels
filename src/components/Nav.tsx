@@ -116,7 +116,7 @@ const Nav = () => {
             </div>
 
             {/* Menu Footer */}
-            <div className="p-3 flex flex-col gap-6 items-center">
+            <div className="p-6 flex flex-col gap-6 items-center">
               <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
