@@ -9,7 +9,7 @@ const Footer = () => (
             <img
               src={logo}
               alt="Tvara Jewels"
-              className="h-auto w-[180px] object-contain mb-8 brightness-110"
+              className="h-auto w-[220px] object-contain mb-8 brightness-110"
             />
           </a>
           <p className="text-white/50 text-sm max-w-xs md:max-w-none">Handcrafted fine jewelry where heritage meets modern design. Crafted with love in India.</p>

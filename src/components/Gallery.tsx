@@ -65,16 +65,10 @@ const Gallery = () => {
         </div>
 
         {/* Section Heading */}
-        <div className="absolute top-0 lg:left-0 left-3 lg:right-0 right-3 z-20 text-center pt-10 pointer-events-none">
-          <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted block mb-3">
-            The Atelier
-          </span>
-          <h2 className="font-serif text-4xl text-green-dark">
-            A Glimpse Into Our World.
-          </h2>
-          <div className="mt-4 flex justify-center">
-            <div className="w-16 h-px bg-gold/50" />
-          </div>
+        <div className="absolute top-75 lg:left-0 left-3 lg:right-0 right-3 z-20 text-center pt-10 pointer-events-none">
+          <p className="text-xl md:text-3xl italic text-gold mb-8 font-serif">
+            Timeless. Beautiful. You.
+          </p>
         </div>
 
         <div className="container mx-auto px-4 lg:px-12 relative z-10 h-full flex items-center justify-center">

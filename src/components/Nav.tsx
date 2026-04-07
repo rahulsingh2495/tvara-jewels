@@ -42,7 +42,7 @@ const Nav = () => {
             <img
               src={logo}
               alt="Tvara Jewels"
-              className={`w-auto object-contain transition-all duration-500 ${isScrolled ? 'h-12 brightness-110' : 'h-16 lg:h-20'}`}
+              className={`w-auto object-contain transition-all duration-500 ${isScrolled ? 'h-12 brightness-110' : 'h-13 lg:h-13'}`}
             />
           </a>
 
