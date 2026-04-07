@@ -42,7 +42,7 @@ const Hero = () => {
             <span className="text-[10px] md:text-[12px] tracking-[0.3em] text-muted uppercase mb-6 block">
               Handcrafted Fine Jewelry · By Prinkle Bafna
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl text-green-dark mb-6 leading-[1.2] lg:leading-[1.1] max-w-md md:max-w-4xl">
+            <h1 className="text-6xl md:text-6xl lg:text-8xl text-green-dark mb-6 leading-[1.2] lg:leading-[1.1] max-w-md md:max-w-4xl">
               Where heritage <br className="hidden md:block" />
               <span className="italic font-light">meets modern design.</span>
             </h1>
