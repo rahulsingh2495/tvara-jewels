@@ -20,18 +20,18 @@ const Gallery = () => {
 
     const handleScroll = () => {
       if (!containerRef.current) return;
-      
+
       if (!ticking) {
         window.requestAnimationFrame(() => {
           const rect = containerRef.current!.getBoundingClientRect();
           const viewHeight = window.innerHeight;
-          
+
           const totalScrollHeight = rect.height - viewHeight;
           const currentScroll = -rect.top;
-          
+
           let progress = currentScroll / totalScrollHeight;
           progress = Math.max(0, Math.min(1, progress));
-          
+
           setScrollProgress(progress);
           ticking = false;
         });
@@ -53,10 +53,10 @@ const Gallery = () => {
     <section id="gallery" ref={containerRef} className="relative bg-ivory-mid" style={{ height: '400vh' }}>
       {/* Sticky Container */}
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
-        
+
         {/* Background Text Decor */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.02] select-none overflow-hidden">
-          <span 
+          <span
             className="text-[40vw] font-serif text-green-dark whitespace-nowrap transition-transform duration-700 ease-out"
             style={{ transform: `translateX(${(scrollProgress - 0.5) * -30}%)` }}
           >
@@ -65,7 +65,7 @@ const Gallery = () => {
         </div>
 
         {/* Section Heading */}
-        <div className="absolute top-0 left-0 right-0 z-20 text-center pt-10 pointer-events-none">
+        <div className="absolute top-0 lg:left-0 left-3 lg:right-0 right-3 z-20 text-center pt-10 pointer-events-none">
           <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted block mb-3">
             The Atelier
           </span>
@@ -78,11 +78,11 @@ const Gallery = () => {
         </div>
 
         <div className="container mx-auto px-4 lg:px-12 relative z-10 h-full flex items-center justify-center">
-          
+
           {/* Left Side Collage */}
           <div className="hidden md:flex gap-4 lg:gap-8 absolute left-4 lg:left-12 h-full items-center">
             {/* Column 1 - Fast Up */}
-            <div 
+            <div
               className="flex flex-col gap-8 lg:gap-12 w-40 lg:w-64 transition-transform duration-500 ease-out"
               style={{ transform: `translateY(${(scrollProgress - 0.5) * -250}%)` }}
             >
@@ -95,7 +95,7 @@ const Gallery = () => {
               ))}
             </div>
             {/* Column 2 - Slow Up */}
-            <div 
+            <div
               className="flex flex-col gap-8 lg:gap-12 w-40 lg:w-64 transition-transform duration-500 ease-out mt-48"
               style={{ transform: `translateY(${(scrollProgress - 0.5) * -120}%)` }}
             >
@@ -112,7 +112,7 @@ const Gallery = () => {
           {/* Right Side Collage */}
           <div className="hidden md:flex gap-4 lg:gap-8 absolute right-4 lg:right-12 h-full items-center">
             {/* Column 3 - Slow Down */}
-            <div 
+            <div
               className="flex flex-col gap-8 lg:gap-12 w-40 lg:w-64 transition-transform duration-500 ease-out mt-[-150px]"
               style={{ transform: `translateY(${(scrollProgress - 0.5) * 120}%)` }}
             >
@@ -125,7 +125,7 @@ const Gallery = () => {
               ))}
             </div>
             {/* Column 4 - Fast Down */}
-            <div 
+            <div
               className="flex flex-col gap-8 lg:gap-12 w-40 lg:w-64 transition-transform duration-500 ease-out"
               style={{ transform: `translateY(${(scrollProgress - 0.5) * 250}%)` }}
             >
@@ -141,13 +141,13 @@ const Gallery = () => {
 
           {/* Mobile View Images (Floating) */}
           <div className="md:hidden absolute inset-0 pointer-events-none overflow-hidden opacity-30">
-            <div 
+            <div
               className="absolute top-1/4 -left-10 w-40 h-52 bg-white p-2 shadow-lg transition-transform duration-500"
               style={{ transform: `translateY(${(scrollProgress - 0.5) * -100}px) rotate(-12deg)` }}
             >
               <img src={products[0].image} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
-            <div 
+            <div
               className="absolute bottom-1/4 -right-10 w-40 h-52 bg-white p-2 shadow-lg transition-transform duration-500"
               style={{ transform: `translateY(${(scrollProgress - 0.5) * 100}px) rotate(12deg)` }}
             >
@@ -159,7 +159,7 @@ const Gallery = () => {
 
         {/* Scroll Progress Bar (Vertical) */}
         <div className="absolute right-6 top-1/2 -translate-y-1/2 h-40 w-px bg-ivory-dark hidden lg:block">
-          <div 
+          <div
             className="w-full bg-gold transition-all duration-100"
             style={{ height: `${scrollProgress * 100}%` }}
           />

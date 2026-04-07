@@ -1,7 +1,7 @@
 const FinalCTA = () => (
   <section className="bg-green-dark py-24">
     <div className="container mx-auto px-6">
-      <div className="border border-gold p-16 text-center max-w-4xl mx-auto">
+      <div className="border border-gold lg:p-16 p-8 text-center max-w-4xl mx-auto">
         <h2 className="text-5xl md:text-6xl text-gold-light mb-6">Ready to find your piece?</h2>
         <p className="text-white/70 text-lg mb-10">Whether it's a signature design or a custom creation, we are here to help you find jewelry that you'll cherish forever.</p>
         <div className="flex flex-wrap justify-center gap-6">

@@ -1,24 +1,24 @@
 import { motion } from 'motion/react';
 
 const About = () => (
-  <section id="about" className="bg-ivory-mid pt-40 pb-24 scroll-mt-28">
+  <section id="about" className="bg-ivory-mid py-20 scroll-mt-28">
     <div className="container mx-auto px-6">
       <div className="grid lg:grid-cols-2 gap-20 items-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           className="relative aspect-[4/5] bg-white p-10 border border-ivory-dark overflow-hidden group"
         >
           <div className="absolute inset-6 border border-gold/30 pointer-events-none z-10" />
-          <img 
-            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&h=1000&q=80" 
-            alt="About Tvara" 
+          <img
+            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&h=1000&q=80"
+            alt="About Tvara"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
             referrerPolicy="no-referrer"
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}

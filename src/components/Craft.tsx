@@ -1,7 +1,7 @@
 import { Hammer, ShieldCheck, Heart } from 'lucide-react';
 
 const Craft = () => (
-  <section id="craft" className="bg-green-dark text-white py-32 scroll-mt-28">
+  <section id="craft" className="bg-green-dark text-white py-20 scroll-mt-28">
     <div className="container mx-auto px-6">
       <div className="grid md:grid-cols-3 gap-16 text-center">
         <div className="flex flex-col items-center">
