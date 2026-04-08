@@ -2,6 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import Icons from './Icons';
+import Rings from '../assets/ringcat.webp'
+import Earrings from '../assets/earingscat.webp'
+// import Necklace from '../assets/necklacecat.webp'
+import Bangles from '../assets/banglescat.webp'
+import Bridal from '../assets/bridalsetimg.webp'
+import Custom from '../assets/customorderimg.webp'
 
 const Collection = () => {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -11,42 +17,42 @@ const Collection = () => {
     {
       name: 'Rings',
       Icon: Icons.Ring,
-      image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1200&h=1600&q=80",
+      image: Rings,
       desc: "Handcrafted rings that tell a story of elegance and grace. Each piece is a testament to heritage and modern artistry.",
       msg: "I'm interested in your Rings collection."
     },
     {
       name: 'Earrings',
       Icon: Icons.Earrings,
-      image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=1200&h=1600&q=80",
+      image: Earrings,
       desc: "Timeless earrings designed to catch every light. From delicate studs to statement drops, find your perfect pair.",
       msg: "I'm interested in your Earrings collection."
     },
     {
       name: 'Necklaces',
       Icon: Icons.Necklace,
-      image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=1200&h=1600&q=80",
+      image: '',
       desc: "Statement necklaces that bridge heritage and modern design. Pieces made to be worn forever.",
       msg: "I'm interested in your Necklaces collection."
     },
     {
       name: 'Bangles & Kadas',
       Icon: Icons.Bangle,
-      image: "https://images.unsplash.com/photo-1629224316810-9d8805b95e76?auto=format&fit=crop&w=1200&h=1600&q=80",
+      image: Bangles,
       desc: "Exquisite bangles and kadas for the modern woman. Handcrafted with real gold, polki, and uncut diamonds.",
       msg: "I'm interested in your Bangles collection."
     },
     {
       name: 'Bridal Sets',
       Icon: Icons.Bridal,
-      image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&h=1600&q=80",
+      image: Bridal,
       desc: "Complete bridal sets for your most precious moments. Timeless jewelry for the modern bride.",
       msg: "I'm interested in your Bridal collection."
     },
     {
       name: 'Custom Orders',
       Icon: Icons.Custom,
-      image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&h=1600&q=80",
+      image: Custom,
       desc: "Bespoke creations tailored to your unique vision. Work with us to design a piece that is uniquely yours.",
       msg: "I'd like to discuss a Custom Order."
     },

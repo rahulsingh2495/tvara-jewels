@@ -1,6 +1,9 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import Icons from './Icons';
+import hero1 from '../assets/hero1.webp';
+import hero2 from '../assets/hero2.webp';
+import hero3 from '../assets/hero3.webp';
 
 const Hero = () => {
   const signaturePieces = [
@@ -9,21 +12,21 @@ const Hero = () => {
       title: "Heritage Necklace Set",
       desc: "Classic polki set with emerald drops.",
       Icon: Icons.Necklace,
-      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&h=800&q=80"
+      image: hero1
     },
     {
       id: 2,
       title: "Statement Bangle",
       desc: "Hand-carved gold with uncut diamonds.",
       Icon: Icons.Bangle,
-      image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=600&h=800&q=80"
+      image: hero2
     },
     {
       id: 3,
       title: "Polki Drop Earrings",
       desc: "Elegant pearls and uncut diamond drops.",
       Icon: Icons.Earrings,
-      image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&h=800&q=80"
+      image: hero3
     }
   ];
 

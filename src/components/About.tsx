@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import storyimg from '../assets/storyimg.webp';
 
 const About = () => (
   <section id="about" className="bg-ivory-mid py-20 scroll-mt-28">
@@ -12,7 +13,7 @@ const About = () => (
         >
           <div className="absolute inset-6 border border-gold/30 pointer-events-none z-10" />
           <img
-            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&h=1000&q=80"
+            src={storyimg}
             alt="About Tvara"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
             referrerPolicy="no-referrer"
