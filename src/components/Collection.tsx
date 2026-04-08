@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import Icons from './Icons';
 import Rings from '../assets/ringcat.webp'
 import Earrings from '../assets/earingscat.webp'
-// import Necklace from '../assets/necklacecat.webp'
+import Necklace from '../assets/neclasecat.webp'
 import Bangles from '../assets/banglescat.webp'
 import Bridal from '../assets/bridalsetimg.webp'
 import Custom from '../assets/customorderimg.webp'
@@ -31,7 +31,7 @@ const Collection = () => {
     {
       name: 'Necklaces',
       Icon: Icons.Necklace,
-      image: '',
+      image: Necklace,
       desc: "Statement necklaces that bridge heritage and modern design. Pieces made to be worn forever.",
       msg: "I'm interested in your Necklaces collection."
     },
