@@ -1,18 +1,26 @@
 import { useState, useEffect, useRef } from 'react';
+import gallery1 from '../assets/gallery1.webp'
+import gallery2 from '../assets/gallery2.webp'
+import gallery3 from '../assets/gallery3.webp'
+import gallery4 from '../assets/gallery4.webp'
+import gallery5 from '../assets/gallery5.webp'
+import gallery6 from '../assets/gallery6.webp'
+import gallery7 from '../assets/gallery7.webp'
+import gallery8 from '../assets/gallery8.webp'
 
 const Gallery = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const products = [
-    { name: 'The Lotus Ring', desc: 'Polki & Pink Enamel', image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&h=1000&q=80' },
-    { name: 'Chandbali Drops', desc: 'Uncut Diamonds & Pearls', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&h=1000&q=80' },
-    { name: 'Royal Kada', desc: '22k Gold Hand-carved', image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&h=1000&q=80' },
-    { name: 'Temple Choker', desc: 'Heritage Gold Work', image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&h=1200&q=80' },
-    { name: 'Floral Studs', desc: 'Minimal Polki Design', image: 'https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=800&h=1000&q=80' },
-    { name: 'Bridal Nath', desc: 'Traditional Craftsmanship', image: 'https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?auto=format&fit=crop&w=800&h=1000&q=80' },
-    { name: 'Emerald Drops', desc: 'Zambian Emeralds & Gold', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&h=1000&q=80' },
-    { name: 'Ruby Bangle', desc: 'Burmese Rubies & Diamonds', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&h=1000&q=80' },
+    { name: 'The Lotus Ring', desc: 'Polki & Pink Enamel', image: gallery1 },
+    { name: 'Chandbali Drops', desc: 'Uncut Diamonds & Pearls', image: gallery2 },
+    { name: 'Royal Kada', desc: '22k Gold Hand-carved', image: gallery3 },
+    { name: 'Temple Choker', desc: 'Heritage Gold Work', image: gallery4 },
+    { name: 'Floral Studs', desc: 'Minimal Polki Design', image: gallery5 },
+    { name: 'Bridal Nath', desc: 'Traditional Craftsmanship', image: gallery6 },
+    { name: 'Emerald Drops', desc: 'Zambian Emeralds & Gold', image: gallery7 },
+    { name: 'Ruby Bangle', desc: 'Burmese Rubies & Diamonds', image: gallery8 },
   ];
 
   useEffect(() => {
