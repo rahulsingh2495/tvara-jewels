@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import Icons from './Icons';
+import LazyImage from './LazyImage';
 import hero1 from '../assets/hero1.webp';
 import hero2 from '../assets/hero2.webp';
 import hero3 from '../assets/hero3.webp';
@@ -77,14 +78,14 @@ const Hero = () => {
                 className="flex-1 relative group bg-ivory-mid border border-gold/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl overflow-hidden"
               >
                 {piece.image && (
-                  <img
+                  <LazyImage
                     src={piece.image}
                     alt={piece.title}
+                    eager={idx === 0}
                     className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
-                    referrerPolicy="no-referrer"
                   />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-green-dark/90 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-green-dark/90 via-transparent to-transparent" />
                 <div className="relative h-full p-4 md:p-8 flex flex-col items-center justify-end text-center">
                   <div className="card-info text-white">
                     <h3 className="font-serif text-lg md:text-2xl mb-1 md:mb-2">{piece.title}</h3>

@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import LazyImage from './LazyImage';
 import storyimg from '../assets/storyimg.webp';
 
 const About = () => (
@@ -9,14 +10,13 @@ const About = () => (
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative aspect-[4/5] bg-white p-10 border border-ivory-dark overflow-hidden group"
+          className="relative aspect-4/5 bg-white p-10 border border-ivory-dark overflow-hidden group"
         >
           <div className="absolute inset-6 border border-gold/30 pointer-events-none z-10" />
-          <img
+          <LazyImage
             src={storyimg}
             alt="About Tvara"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
-            referrerPolicy="no-referrer"
           />
         </motion.div>
         <motion.div

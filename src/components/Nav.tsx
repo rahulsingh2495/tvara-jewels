@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Instagram, Menu, X } from 'lucide-react';
+import LazyImage from './LazyImage';
 import logo from '../assets/Tvara logo.png';
 
 const Nav = () => {
@@ -39,9 +40,10 @@ const Nav = () => {
         <div className="container mx-auto px-6 flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group transition-transform hover:scale-105 duration-300">
-            <img
+            <LazyImage
               src={logo}
               alt="Tvara Jewels"
+              eager={true}
               className={`w-auto object-contain transition-all duration-500 ${isScrolled ? 'h-12 brightness-110' : 'h-13 lg:h-13'}`}
             />
           </a>
@@ -84,11 +86,11 @@ const Nav = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-green-dark z-[110] flex flex-col"
+            className="fixed inset-0 bg-green-dark z-110 flex flex-col"
           >
             {/* Menu Header */}
             <div className="flex justify-between items-center p-4 border-b border-white/10">
-              <img src={logo} alt="Tvara Jewels" className="h-14 object-contain" />
+              <LazyImage src={logo} alt="Tvara Jewels" className="h-14 object-contain" eager={true} />
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-white p-2 hover:bg-white/10 rounded-full transition-colors"

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import Icons from './Icons';
+import LazyImage from './LazyImage';
 import Rings from '../assets/ringcat.webp'
 import Earrings from '../assets/earingscat.webp'
 import Necklace from '../assets/neclasecat.webp'
@@ -81,17 +82,17 @@ const Collection = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIdx}
-              initial={{ opacity: 0, scale: 1.1, filter: 'blur(10px)' }}
-              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-              exit={{ opacity: 0, scale: 1.05, filter: 'blur(10px)' }}
+              initial={{ opacity: 0, scale: 1.1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              style={{ willChange: 'transform, opacity' }}
               className="absolute inset-0"
             >
-              <img
+              <LazyImage
                 src={categories[activeIdx].image}
                 alt={categories[activeIdx].name}
                 className="w-full h-full object-cover opacity-70"
-                referrerPolicy="no-referrer"
               />
               {/* Subtle Texture Overlay */}
               <div className="absolute inset-0 bg-green-dark/20 mix-blend-overlay" />

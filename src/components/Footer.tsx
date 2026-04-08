@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 import logo from '../assets/Tvara logo.png';
 
 const Footer = () => (
@@ -6,7 +7,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
           <a href="#" className="inline-block transition-transform hover:scale-105 duration-300">
-            <img
+            <LazyImage
               src={logo}
               alt="Tvara Jewels"
               className="h-auto w-[220px] object-contain mb-8 brightness-110"

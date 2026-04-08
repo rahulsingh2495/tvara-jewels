@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage';
 import founderimg from '../assets/tvara founder.jpg';
 
 const Founder = () => (
@@ -6,12 +7,11 @@ const Founder = () => (
       <div className="grid lg:grid-cols-2 gap-20 items-center">
         <div className="relative p-12 bg-white border border-ivory-mid group">
           <div className="absolute -top-5 -left-5 w-24 h-24 border-t-2 border-l-2 border-gold z-10" />
-          <div className="aspect-[4/5] bg-ivory-mid flex items-center justify-center overflow-hidden">
-            <img
+          <div className="aspect-4/5 bg-ivory-mid flex items-center justify-center overflow-hidden">
+            <LazyImage
               src={founderimg}
               alt="Prinkle Bafna"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
-              referrerPolicy="no-referrer"
             />
           </div>
         </div>
